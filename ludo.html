@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    
+    <div class="diceboard">
+        <div class="info">
+            <span class="playername">
+                Player <br> 1
+             </span>
+            <div class="y-dice" onclick="dice(this,2)">
+                
+            </div>
+            
+        </div>
+        <div class="info">
+            <span class="playername">
+               Player <br>2 
+            </span>
+            <div class="g-dice" onclick="dice(this,1)">
+                
+            </div>
+        </div>
+        
+        <div class="info">
+            <span class="playername">
+               Player <br>
+                3 
+            </span>
+            <div class="r-dice" onclick="dice(this,0)">
+                
+            </div>
+        </div>
+        <div class="info">
+            <span class="playername">
+                Player <br>4 
+             </span>
+        <div class="b-dice" onclick="dice(this,3)">
+        </div>
+        <div class="dice-container">
+            <button id="roll-dice-btn">Roll Dice</button>
+            <div id="dice-result"></div>
+        </div>
+    </div>
+    </div>
+    
+    <div class="container">
+        <div class="container1">
+            <div class="row1-col1 green">
+                <div class="row1-col1-child white">
+                    <div class="green"><h1 class="piece">🔘</h1></div>
+                    <div class="green"><h1 class="piece">🔘</h1></div>
+                    <div class="green"><h1 class="piece">🔘</h1></div>
+                    <div class="green"><h1 class="piece">🔘</h1></div>
+                </div>
+            </div>
+            <div class="row1-col2 path">
+                <!--1st line-->
+                <div></div>
+                <div></div>
+                <div></div>
+                <!--2nd line-->
+                <div></div>
+                <div class="yellow"></div>
+                <div class="yellow">
+                    <div class="icon ">
+                     <h1 >⭐</h1>
+                    </div>
+                </div>
+                <!--3rd line-->
+                <div class="green">
+                    <div class="icon ">
+                        <h1 >⭐</h1>
+                       </div>  
+                </div>
+                <div class="yellow"></div>
+                <div></div>
+                <!--4th line-->
+                <div></div>
+                <div class="yellow"></div>
+                <div></div>
+                <!--5th line-->
+                <div></div>
+                <div class="yellow"></div>
+                <div></div>
+                <!--6th line-->
+                <div></div>
+                <div class="yellow"></div>
+                <div></div>
+            </div>
+            <div class="row1-col3 yellow">
+                <div class="row1-col3-child white">
+                    <div class="yellow"><h1 class="piece">🔘</h1></div>
+                    <div class="yellow"><h1 class="piece">🔘</h1></div>
+                    <div class="yellow"><h1 class="piece">🔘</h1></div>
+                    <div class="yellow"><h1 class="piece">🔘</h1></div>
+                </div>
+            </div>
+            </div>
+
+            <div class="container2">
+                <div class="row2-col1 path">
+                <!--1st line-->
+                    <div></div>
+                    <div class="green">
+                        <div class="icon ">
+                            <h1 >⭐</h1>
+                           </div>  
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                <!--2nd line-->
+                    <div></div>
+                    <div class="green"></div>
+                    <div class="green"></div>
+                    <div class="green"></div>
+                    <div class="green"></div>
+                    <div class="green"></div>
+                <!--1st line-->
+                <div></div>
+                <div></div>
+                <div class="red">
+                    <div class="icon">
+                        <h1>⭐</h1>
+                       </div>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                </div>
+                <div class="row2-col2 home">
+                    <div class="contain-triangle">
+                        <div class="circle"> 
+                            <div class="text">
+                            <h1>WIN</h1>
+                            </div>
+                        </div>
+                    <div class="triangle-right"></div>
+                    <div class="triangle-up"></div>
+                    <div class="triangle-left"></div>
+                    <div class="triangle-down "></div>
+                </div>
+                </div>
+                <div class="row2-col3 path">
+                    <!--1st line-->
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div class="yellow">
+                        <div class="icon ">
+                            <h1 >⭐</h1>
+                           </div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                <!--2nd line ca-->
+                    <div class="blue"></div>
+                    <div class="blue"></div>
+                    <div class="blue"></div>
+                    <div class="blue"></div>
+                    <div class="blue"></div>
+                    <div></div>
+                    <!--1st line-->
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div class="blue">
+                        <div class="icon ">
+                            <h1 >⭐</h1>
+                           </div>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+
+            <div class="container3">
+                <div class="row3-col1 red">
+                    <div class="row3-col1-child white">
+                        <div class="red"><h1 class="piece">🔘</h1></div>
+                        <div class="red"><h1 class="piece">🔘</h1></div>
+                        <div class="red"><h1 class="piece">🔘</h1></div>
+                        <div class="red"><h1 class="piece">🔘</h1></div>
+                    </div>
+                </div>
+                <div class="row3-col2 path">
+                    <!--1st line-->
+                <div></div>
+                <div class="red"></div>
+                <div></div>
+                <!--2nd line-->
+                <div></div>
+                <div class="red"></div>
+                <div></div>
+                <!--3rd line-->
+                <div></div>
+                <div class="red"></div>
+                <div></div>
+                <!--4th line-->
+                <div></div>
+                <div class="red"></div>
+                <div class="blue">
+                    <div class="icon ">
+                        <h1 >⭐</h1>
+                       </div>
+                </div>
+                <!--5th line-->
+                <div class="red">
+                    <div class="icon ">
+                        <h1 >⭐</h1>
+                       </div>
+                </div>
+                <div class="red"></div>
+                <div></div>
+                <!--6th line-->
+                <div></div>
+                <div></div>
+                <div></div>
+                
+                </div>
+                <div class="row3-col3 blue">
+                    <div class="row3-col3-child white">
+                        <div class="blue"><h1 class="piece">🔘</h1></div>
+                        <div class="blue"><h1 class="piece">🔘</h1></div>
+                        <div class="blue"><h1 class="piece">🔘</h1></div>
+                        <div class="blue"><h1 class="piece">🔘</h1></div>
+                    </div>
+                    </div>
+                </div>    
+</div>
+          
+
+
+
+<script src="./app.js"></script>
+    
+</body>
+</html>
